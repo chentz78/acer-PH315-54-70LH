@@ -24,6 +24,16 @@ A collection of information about the notebook Acer Predator Helios 300 2021 (PH
 
 * [Unlock undervolting](https://www.reddit.com/r/AcerNitro/comments/qvznen/unlock_undervolting_on_11th_gen_h45_nitro_5/)
 * [Unlock BIOS Downgrade](https://www.tenforums.com/drivers-hardware/72206-downgrade-acer-laptop-bios.html)
+* [Unlock BIOS Downgrade 2](https://community.acer.com/en/discussion/536571/is-it-possible-to-downgrade-a-bios)
+* [Heating Issue System/PCH](https://community.acer.com/en/discussion/648827/heating-issue-helios-300-ph315-54)
+
+### Video Bios Mod RTX 3070
+
+* [Unlock 140W TGP on PH315-54 - RTX 3070 - Portuguese](https://www.youtube.com/watch?v=Vp9Xb-62W9k)
+* VBios Files (to use with nvflash.exe):
+    * [My VBios](https://www.techpowerup.com/vgabios/236084/236084) - Max 110W TGP - MD5 3491a5598028693a0e39a218a64d4522
+    * [PH317-55 VBios](https://www.techpowerup.com/vgabios/239596/239596) - Max 140W TGP - MD5 fe551497a9171e1f64c44d5d3bd4ab49
+    * [Above video VBios - Model ???](https://www.techpowerup.com/vgabios/241172/241172) - Max 140W TGP - MD5 de2f57f0a19dde8cd64f01735be4be23
 
 ## Linux
 
