@@ -1,0 +1,2 @@
+# acer-PH315-54-70LH
+Acer Predator Helios 300 2021 (PH315-54-70LH)- 11800H and RTX 3070
