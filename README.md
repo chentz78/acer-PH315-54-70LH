@@ -20,6 +20,42 @@ A collection of information about the notebook Acer Predator Helios 300 2021 (PH
 
 [Source](https://www.ultrabookreview.com/47441-acer-predator-helios-300-review-ph315-54/)
 
+## Windows
+
+* [Unlock undervolting](https://www.reddit.com/r/AcerNitro/comments/qvznen/unlock_undervolting_on_11th_gen_h45_nitro_5/)
+* [Unlock BIOS Downgrade](https://www.tenforums.com/drivers-hardware/72206-downgrade-acer-laptop-bios.html)
+
+## Linux
+
+* [Turbo mode and RGB Keyboard](https://github.com/JafarAkhondali/acer-predator-turbo-and-rgb-keyboard-linux-module)
+* [Fan control](https://github.com/nbfc-linux/nbfc-linux)
+* [ACPI Acer EC module](https://github.com/MusiKid/acpi_ec)
+* [Generic info about Acer Notebook on linux](https://wiki.archlinux.org/title/Laptop/Acer)
+* [intel-undervolt](https://github.com/kitsunyan/intel-undervolt)
+
+### PCH Tiger Lake Temp Read
+
+There is no PCH temp reading on linux (System temp on Predator Sense on Windows side). I tested on kernel 6.0, 6.1 and 6.2-rc6, and there is no information about the
+PCH temp reported by the kernel. Using the `acpi_ec` and `nbfc`, I could read this information from the EC reg directly.
+To get this information you need to compile the `nbfc` project and use the `ec_probe` program to read the register 0xB3
+in my case. You can run the command `sudo ec_probe read 0xB3` to get the measure.
+
+### Undervolt
+
+I'm using the intel-undervolt project to do the undervolt on 11800H CPU (after the unlock procedure on the Windows, see
+the Windows section). I'm using this configuratio below without any problem:
+
+```
+undervolt 0 'CPU' -84.0
+undervolt 1 'GPU' -25.0
+undervolt 2 'CPU Cache' -70.0
+#undervolt 3 'System Agent' -60.0 // This value does not work on my linux
+undervolt 4 'Analog I/O' -65.0
+
+# Min tjoffset -4
+tjoffset -8
+```
+
 ## Hardware Modifications
 
 * [Open more ventilation slots on the back cover - Portuguese](https://www.youtube.com/watch?v=Yur9NBcA638)
