@@ -2,7 +2,7 @@
 
 A collection of information about the notebook Acer Predator Helios 300 2021 (PH315-54-70LH, Brazil Version).
 
-## Laptop specifications
+## Notebook specifications
 
 | Device                  | PH315-54-70LH, Brazil Version                               |
 | ----------------------- | :---------------------------------------------------------- |
@@ -28,6 +28,6 @@ A collection of information about the notebook Acer Predator Helios 300 2021 (PH
 ## Resources
 
 * Acer Support pages:
- * [USA](https://www.acer.com/us-en/support?filter=global_download&search=Predator%20PH315-54)
- * [Brazil](https://www.acer.com/br-pt/support?search=Predator%20PH315-54&filter=global_download&suggest=ph315-54;1)
+  * [USA](https://www.acer.com/us-en/support?filter=global_download&search=Predator%20PH315-54)
+  * [Brazil](https://www.acer.com/br-pt/support?search=Predator%20PH315-54&filter=global_download&suggest=ph315-54;1)
 * [Brazil User group on Telegram](https://t.me/predatorhelios300br)
