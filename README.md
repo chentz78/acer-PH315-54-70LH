@@ -31,9 +31,10 @@ A collection of information about the notebook Acer Predator Helios 300 2021 (PH
 
 * [Unlock 140W TGP on PH315-54 - RTX 3070 - Portuguese](https://www.youtube.com/watch?v=Vp9Xb-62W9k)
 * VBios Files (to use with nvflash.exe):
-    * [My VBios](https://www.techpowerup.com/vgabios/236084/236084) - Max 110W TGP - MD5 3491a5598028693a0e39a218a64d4522
-    * [PH317-55 VBios](https://www.techpowerup.com/vgabios/239596/239596) - Max 140W TGP - MD5 fe551497a9171e1f64c44d5d3bd4ab49
-    * [Above video VBios - Model ???](https://www.techpowerup.com/vgabios/241172/241172) - Max 140W TGP - MD5 de2f57f0a19dde8cd64f01735be4be23
+    * [My VBios](https://www.techpowerup.com/vgabios/236084/236084) - Base ??? / Max 110W TGP - MD5 3491a5598028693a0e39a218a64d4522
+    * [PH317-55 VBios](https://www.techpowerup.com/vgabios/239596/239596) - Base 112W/Max 140W TGP - MD5 fe551497a9171e1f64c44d5d3bd4ab49
+    * [Above video VBios - Model ???](https://www.techpowerup.com/vgabios/241172/241172) - Base 115W/Max 140W TGP - MD5 de2f57f0a19dde8cd64f01735be4be23
+    * [MSI GE76 RAIDER 10UG](https://www.techpowerup.com/vgabios/229426/229426) - Base 125W/Max 140W TGP - MD5 8d7eb73124f196f827e9ade2de65772d
 
 ## Linux
 
@@ -49,6 +50,12 @@ There is no PCH temp reading on linux (System temp on Predator Sense on Windows 
 PCH temp reported by the kernel. Using the `acpi_ec` and `nbfc`, I could read this information from the EC reg directly.
 To get this information you need to compile the `nbfc` project and use the `ec_probe` program to read the register 0xB3
 in my case. You can run the command `sudo ec_probe read 0xB3` to get the measure.
+
+EC List:
+
+* `0xB3` : Intel PCH Temp
+* `0xB4` : RTX 3070 Temp
+* `0x13` : Read CPU Fan Speed ??? (From [nbfc config file](https://github.com/nbfc-linux/nbfc-linux/blob/main/share/nbfc/configs/Acer%20Predator%20PH315-54.json))
 
 ### Undervolt
 
@@ -77,3 +84,4 @@ tjoffset -8
   * [USA](https://www.acer.com/us-en/support?filter=global_download&search=Predator%20PH315-54)
   * [Brazil](https://www.acer.com/br-pt/support?search=Predator%20PH315-54&filter=global_download&suggest=ph315-54;1)
 * [Brazil User group on Telegram](https://t.me/predatorhelios300br)
+* [PH315-54 Review](https://www.ultrabookreview.com/47441-acer-predator-helios-300-review-ph315-54/)
