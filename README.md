@@ -43,6 +43,7 @@ A collection of information about the notebook Acer Predator Helios 300 2021 (PH
 * [ACPI Acer EC module](https://github.com/MusiKid/acpi_ec)
 * [Generic info about Acer Notebook on linux](https://wiki.archlinux.org/title/Laptop/Acer)
 * [intel-undervolt](https://github.com/kitsunyan/intel-undervolt)
+* [Acer Baterry Health and Calibration](https://github.com/frederik-h/acer-wmi-battery)
 
 ### PCH Tiger Lake Temp Read
 
